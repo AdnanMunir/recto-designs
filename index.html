@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recto Designs | Sustainable Living</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="page">
+    <!-- Header -->
+    <header class="topbar">
+      <a href="index.html" class="brand">
+        <img src="recto-designs.png" alt="Recto Designs" style="height: 60px; width: auto;" />
+      </a>
+      <nav class="nav">
+        <a href="furniture.html">Furniture</a>
+        <a href="lighting.html">Lighting</a>
+        <a href="trays.html">Trays</a>
+        <a href="storage.html">Storage</a>
+        <a href="accessories.html">Accessories</a>
+      </nav>
+      <div class="header-actions">
+        <a href="#" class="ghost" style="border:none; padding: 0;">Search</a>
+        <a href="#" class="ghost" style="border:none; padding: 0;">Cart (0)</a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero__bg">
+        <img src="header.png" alt="Modern sustainable living" />
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <h1>Design for a<br>Better World.</h1>
+        <p>Curated sustainable furniture and objects for the modern home.</p>
+        <a href="furniture.html" class="btn primary">Shop Collection</a>
+      </div>
+    </section>
+
+    <!-- Shop by Category -->
+    <section class="filters">
+      <div class="filters__head">
+        <h2>Shop by Category</h2>
+        <div class="filter__controls">
+          <a href="furniture.html" class="pill">Furniture</a>
+          <a href="lighting.html" class="pill">Lighting</a>
+          <a href="trays.html" class="pill">Trays</a>
+          <a href="storage.html" class="pill">Storage</a>
+          <a href="accessories.html" class="pill">Accessories</a>
+        </div>
+      </div>
+
+      <div class="grid">
+        <!-- Furniture -->
+        <a href="furniture.html" class="card">
+          <div class="card__media">
+            <img src="images/small-table-1.jpg" alt="Furniture Collection" />
+          </div>
+          <div class="card__meta">
+            <span class="title">Furniture</span>
+            <span class="price">View</span>
+          </div>
+        </a>
+
+        <!-- Lighting -->
+        <a href="lighting.html" class="card">
+          <div class="card__media">
+            <img src="images/lamp-1.jpg" alt="Lighting Collection" />
+          </div>
+          <div class="card__meta">
+            <span class="title">Lighting</span>
+            <span class="price">View</span>
+          </div>
+        </a>
+
+        <!-- Trays -->
+        <a href="trays.html" class="card">
+          <div class="card__media">
+            <img src="images/bavel-tray-1.jpg" alt="Trays Collection" />
+          </div>
+          <div class="card__meta">
+            <span class="title">Trays</span>
+            <span class="price">View</span>
+          </div>
+        </a>
+
+        <!-- Storage -->
+        <a href="storage.html" class="card">
+          <div class="card__media">
+            <img src="images/box-1.jpg" alt="Storage Collection" />
+          </div>
+          <div class="card__meta">
+            <span class="title">Storage</span>
+            <span class="price">View</span>
+          </div>
+        </a>
+
+        <!-- Accessories -->
+        <a href="accessories.html" class="card">
+          <div class="card__media">
+            <img src="images/phone-handle-1.jpg" alt="Accessories Collection" />
+          </div>
+          <div class="card__meta">
+            <span class="title">Accessories</span>
+            <span class="price">View</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h3>Recto.</h3>
+          <p style="color: var(--text-muted); max-width: 300px;">
+            Empowering artisans and preserving craftsmanship through sustainable design.
+          </p>
+        </div>
+        <div class="footer-links">
+          <div class="link-group">
+            <h4>Shop</h4>
+            <a href="furniture.html">Furniture</a>
+            <a href="lighting.html">Lighting</a>
+            <a href="trays.html">Trays</a>
+            <a href="storage.html">Storage</a>
+          </div>
+          <div class="link-group">
+            <h4>About</h4>
+            <a href="#">Our Story</a>
+            <a href="#">Sustainability</a>
+            <a href="#">Artisans</a>
+            <a href="#">Careers</a>
+          </div>
+          <div class="link-group">
+            <h4>Support</h4>
+            <a href="#">Contact</a>
+            <a href="#">Shipping</a>
+            <a href="#">Returns</a>
+            <a href="#">FAQ</a>
+          </div>
+        </div>
+      </div>
+      <div
+        style="margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; color: var(--text-muted); font-size: 0.85rem;">
+        <span>&copy; <span id="year"></span> Recto Designs</span>
+        <span>Privacy Policy &nbsp; Terms of Service</span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Simple sticky header effect
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('.topbar');
+      if (window.scrollY > 10) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+
+</html>
